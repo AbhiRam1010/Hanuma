@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block title %}Forgot Password{% endblock title %}
+{% block body %}
+<center>
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="">Enter Username</label>
+        <input type="text" name="un"><br><br>
+        <label for="">Enter Password</label>
+        <input type="password" name="pw"><br><br>
+        <label for="">Confirm Password</label>
+        <input type="password" name="cpw"><br><br>
+        <input type="submit" value="submit">
+
+    </form>
+</center>
+{% endblock body %}
