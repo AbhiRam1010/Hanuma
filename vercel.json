@@ -1,3 +1,10 @@
+
+{
+  "builds": [
+    { "src": "path/to/manage.py", "use": "@vercel/python" }
+  ]
+}
+
 {
     "version": 2,
     "builds": [
@@ -25,3 +32,4 @@
     }
     ]
     }
+
