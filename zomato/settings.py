@@ -81,6 +81,17 @@ WSGI_APPLICATION = 'zomato.wsgi.application'
 #     }
 # }
 
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "WYpwkxOYooObsvrWGERRAuOTFmiKpNLb",
+        "HOST": "viaduct.proxy.rlwy.net",
+        "PORT": "55065",
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -117,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIR=[os.path.join(BASE_DIR,'static')]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
